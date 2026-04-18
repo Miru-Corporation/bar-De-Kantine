@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import { CTAButton } from '../ui/CTAButton'
 import { content } from '../../data/content'
+import { asset } from '../../utils/asset'
 
 export default function Hero() {
   const { hero } = content
@@ -14,7 +15,7 @@ export default function Hero() {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/hero-bg.jpg)' }}
+        style={{ backgroundImage: `url(${asset('images/hero-bg.jpg')})` }}
         aria-hidden="true"
       />
       {/* Gradient overlay */}

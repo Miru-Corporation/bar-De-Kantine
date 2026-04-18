@@ -2,6 +2,7 @@ import { Heart, MapPin, Zap } from 'lucide-react'
 import { SectionWrapper } from '../ui/SectionWrapper'
 import { AnimatedEntry } from '../ui/AnimatedEntry'
 import { content } from '../../data/content'
+import { asset } from '../../utils/asset'
 
 const iconMap = { heart: Heart, 'map-pin': MapPin, zap: Zap }
 
@@ -51,7 +52,7 @@ export default function About() {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl">
                 <img
-                  src="/images/about.jpg"
+                  src={asset('images/about.jpg')}
                   alt="L'intérieur chaleureux de De Kantine"
                   className="w-full h-full object-cover"
                 />
